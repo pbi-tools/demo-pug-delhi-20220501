@@ -1,0 +1,4 @@
+*.pbix
+
+query.json
+dataTransforms.json
