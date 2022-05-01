@@ -59,6 +59,11 @@
         }
       ]
     },
+    "columnProperties": {
+      "Sales.Sales Amount": {
+        "displayName": "Total Sales Amount"
+      }
+    },
     "drillFilterOtherVisuals": true,
     "hasDefaultSort": true
   }
