@@ -7,7 +7,336 @@
       "type": 2
     }
   },
-  "activeSectionIndex": 5,
+  "activeSectionIndex": 0,
+  "bookmarks": [
+    {
+      "displayName": "Bookmark 1",
+      "name": "Bookmark8b2f355a3e202571dfd5",
+      "explorationState": {
+        "version": "1.3",
+        "activeSection": "ReportSection87b662b0b457c2064754",
+        "sections": {
+          "ReportSection87b662b0b457c2064754": {
+            "visualContainers": {
+              "9b3dfd205ccb1e89eda2": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "Sales Amount"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Categorical",
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Time Intelligence"
+                            }
+                          },
+                          "Property": "Time Calc"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Categorical",
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Property": "Month"
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "pivotTable",
+                  "objects": {},
+                  "orderBy": [
+                    {
+                      "Direction": 1,
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Property": "Month"
+                        }
+                      }
+                    }
+                  ],
+                  "activeProjections": {
+                    "Rows": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Property": "Month"
+                        }
+                      }
+                    ],
+                    "Columns": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Time Intelligence"
+                            }
+                          },
+                          "Property": "Time Calc"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "4607bb15fe9e99edab2f": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "Categorical",
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Property": "Calendar Year"
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "slicer",
+                  "objects": {
+                    "merge": {
+                      "general": [
+                        {
+                          "properties": {
+                            "filter": {
+                              "filter": {
+                                "Version": 2,
+                                "From": [
+                                  {
+                                    "Name": "d",
+                                    "Entity": "Date",
+                                    "Type": 0
+                                  }
+                                ],
+                                "Where": [
+                                  {
+                                    "Condition": {
+                                      "In": {
+                                        "Expressions": [
+                                          {
+                                            "Column": {
+                                              "Expression": {
+                                                "SourceRef": {
+                                                  "Source": "d"
+                                                }
+                                              },
+                                              "Property": "Calendar Year"
+                                            }
+                                          }
+                                        ],
+                                        "Values": [
+                                          [
+                                            {
+                                              "Literal": {
+                                                "Value": "'CY 2009'"
+                                              }
+                                            }
+                                          ]
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "data": [
+                        {
+                          "properties": {
+                            "mode": {
+                              "expr": {
+                                "Literal": {
+                                  "Value": "'Basic'"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "activeProjections": {
+                    "Values": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Date"
+                            }
+                          },
+                          "Property": "Calendar Year"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "e87997ebfb2eed4a3045": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "Categorical",
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Time Intelligence"
+                            }
+                          },
+                          "Property": "Time Calc"
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "slicer",
+                  "objects": {
+                    "merge": {
+                      "data": [
+                        {
+                          "properties": {
+                            "mode": {
+                              "expr": {
+                                "Literal": {
+                                  "Value": "'Basic'"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "activeProjections": {
+                    "Values": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Time Intelligence"
+                            }
+                          },
+                          "Property": "Time Calc"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "c40b82b0c64059e56f26": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {}
+                }
+              },
+              "37ffe7ffe81e8eceeca1": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "Sales Amount"
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "card",
+                  "objects": {},
+                  "orderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "Sales Amount"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "objects": {
+          "merge": {
+            "outspacePane": [
+              {
+                "properties": {
+                  "expanded": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "false"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "options": {
+        "targetVisualNames": []
+      }
+    }
+  ],
   "defaultDrillFilterOtherVisuals": true,
   "slowDataSourceSettings": {
     "isCrossHighlightingDisabled": false,
