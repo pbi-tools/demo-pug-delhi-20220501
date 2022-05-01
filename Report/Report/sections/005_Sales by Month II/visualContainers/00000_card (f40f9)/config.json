@@ -1,0 +1,70 @@
+{
+  "name": "f40f9d7ec39f51fd8448",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1024,
+        "y": 56,
+        "z": 4000,
+        "width": 216,
+        "height": 128
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "card",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Sales.Sales Amount"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Sales",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Sales Amount"
+          },
+          "Name": "Sales.Sales Amount"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Measure": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "s"
+                }
+              },
+              "Property": "Sales Amount"
+            }
+          }
+        }
+      ]
+    },
+    "columnProperties": {
+      "Sales.Sales Amount": {
+        "displayName": "Total Sales Amount"
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true
+  }
+}
